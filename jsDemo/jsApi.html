@@ -19,62 +19,75 @@
   body
   <div class="main">
     main
-    <ul>
-      ul
-      <li class="item">
-        li
+    <div class="ul">
+      .ul
+      <div class="item">
+        div
         <a href="javascript:;">a 标题一</a>
-      </li>
-      <li class="item" id="title">
-        li
-        <a href="javascript:;">a 标题二</a>
-      </li>
-      <li class="item">
-        li
+      </div>
+      <div class="item" id="title">
+        div
+        <a href="#baidu.com">a 标题二</a>
+      </div>
+      <div class="item">
+        div
         <a href="javascript:;">a 标题三</a>
-      </li>
-      <li class="item">
-        li
+      </div>
+      <div class="item">
+        div
         <a href="javascript:;">a 标题四</a>
-      </li>
-    </ul>
-  </div>
-  结果：
-  <div>
-    父元素<br>
-    var parentNode = title.parentNode;<br>
-    var parentElement = title.parentElement;
-  </div>
-  <div>
-      兄弟元素：<br>
-      var prevSibling = title.previousSibling;<br>
-      var nextSibling = title.nextSibling;
+      </div>
+      </ul>
+    </div>
+    结果：
+    <div>
+      父元素
+      <br> var parentNode = title.parentNode;
+      <br> var parentElement = title.parentElement;
     </div>
     <div>
-        子元素：<br>
-        var children = title.children;
-      </div>
-  <script>
-    //获取父元素
-    var parentNode = title.parentNode;
-    var parentElement = title.parentElement;
-    //获取习兄弟节点
-    var prevSibling = title.previousSibling;
-    var nextSibling = title.nextSibling;
-    //获取子元素
-    var children = title.children;
+      兄弟元素：
+      <br> var prevSibling = title.previousSibling;
+      <br> var nextSibling = title.nextSibling;
+    </div>
+    <div>
+      子元素：
+      <br> var children = title.children;
+      <br>var childrenNode = title.childNodes;
+    </div>
+    <div>
+      //获取属性 <br> var attr01 = title.querySelector('a').href; <br> var attr02 = title.querySelector('a').getAttribute('href');
+    </div>
+    可打开控制台查看详细结果
 
-    console.log('父元素：');
-    console.log(parentNode);
-    console.log(parentElement);
-    console.log('兄弟元素：');
-    console.log('prev:');
-    console.log(prevSibling);
-    console.log('next:');
-    console.log(nextSibling);
-    console.log('子元素：');
-    console.log(children);
-  </script>
+    <script>
+      //获取父元素
+      var parentNode = title.parentNode;
+      var parentElement = title.parentElement;
+      //获取习兄弟节点
+      var prevSibling = title.previousSibling;
+      var nextSibling = title.nextSibling;
+      //获取子元素
+      var children = title.children;
+      var childrenNode = title.childNodes;
+      //获取属性
+      var attr01 = title.querySelector('a').href;
+      var attr02 = title.querySelector('a').getAttribute('href');
+      console.log('父元素：');
+      console.log(parentNode);
+      console.log(parentElement);
+      console.log('兄弟元素：');
+      console.log('prev:');
+      console.log(prevSibling);
+      console.log('next:');
+      console.log(nextSibling);
+      console.log('子元素：');
+      console.log(children);
+      console.log(childrenNode);
+      console.log('获取属性');
+      console.log('attr01:' + attr01);
+      console.log('attr02:' + attr02);
+    </script>
 </body>
 
 </html>
