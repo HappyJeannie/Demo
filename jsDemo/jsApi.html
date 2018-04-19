@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jsApi</title>
+  <link rel="stylesheet" href="./css/rest.css">
+  <style>
+    * {
+      border: 1px solid #666;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  body
+  <div class="main">
+    main
+    <ul>
+      ul
+      <li class="item">
+        li
+        <a href="javascript:;">a 标题一</a>
+      </li>
+      <li class="item" id="title">
+        li
+        <a href="javascript:;">a 标题二</a>
+      </li>
+      <li class="item">
+        li
+        <a href="javascript:;">a 标题三</a>
+      </li>
+      <li class="item">
+        li
+        <a href="javascript:;">a 标题四</a>
+      </li>
+    </ul>
+  </div>
+  结果：
+  <div>
+    父元素<br>
+    var parentNode = title.parentNode;<br>
+    var parentElement = title.parentElement;
+  </div>
+  <div>
+      兄弟元素：<br>
+      var prevSibling = title.previousSibling;<br>
+      var nextSibling = title.nextSibling;
+    </div>
+    <div>
+        子元素：<br>
+        var children = title.children;
+      </div>
+  <script>
+    //获取父元素
+    var parentNode = title.parentNode;
+    var parentElement = title.parentElement;
+    //获取习兄弟节点
+    var prevSibling = title.previousSibling;
+    var nextSibling = title.nextSibling;
+    //获取子元素
+    var children = title.children;
+
+    console.log('父元素：');
+    console.log(parentNode);
+    console.log(parentElement);
+    console.log('兄弟元素：');
+    console.log('prev:');
+    console.log(prevSibling);
+    console.log('next:');
+    console.log(nextSibling);
+    console.log('子元素：');
+    console.log(children);
+  </script>
+</body>
+
+</html>
